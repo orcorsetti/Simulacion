@@ -236,13 +236,6 @@ class Simulador(object):
 def valorExponencial(media):
     return np.random.exponential(1/media)
 
-def quitarDeLaCola(pcola):
-    ncola = len(pcola)
-    for i in range(ncola):
-        pcola[i] = pcola[i + 1]
-    pcola[ncola] = ""
-
-
 
 for i in range(1000):
     sim1 = Simulador()
